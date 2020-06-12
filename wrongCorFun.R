@@ -1,7 +1,4 @@
-#require(MASS)
-#require(polycor)
-
-
+# Function to calculate the bias in product moment correlations and non-linearities in odds ratios.
 
 wrongCor <- function(r, rep, N, thresh1, thresh2 = NULL){
 
