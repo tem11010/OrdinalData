@@ -1,14 +1,6 @@
-require(MASS)
-require(polycor)
+#require(MASS)
+#require(polycor)
 
-
-
-
-# r = .7
-# rep = 10
-# N = 1000
-# thresh1 = c(-1, -.5, 0, 0.5, 1)
-# thresh2 = c(-1, -.5, 0, 0.5, 1)
 
 
 wrongCor <- function(r, rep, N, thresh1, thresh2 = NULL){
@@ -72,54 +64,5 @@ rownames(res) <- c("Simulated Value", "Polychoric Estimate", "Product-Moment Est
 
 res
 }
-
-
-###
-
-
-wrongCor(r = .7, rep = 10, N = 1000, thresh1 = c(-1, -.5, 0, 0.5, 1) , thresh2 = c(-1, -.5, 0, 0.5, 1))
-wrongCor(r = .7, rep = 10, N = 1000,  thresh1 = c(-1, -.5, 0, 0.5, 1))
-
-
-wrongCor(r = .7, rep = 10, N = 1000, thresh1 = 0 , thresh2 = 0)
-wrongCor(r = .7, rep = 12, N = 1000,  thresh1 = 0)
-
-
-# Testing a few different sets of thresholds
-
-
-# Example 1
-nTh <- 6
-prev <- c((1:nTh)/(nTh+1))
-thr <- qnorm(prev)
-
-wrongCor(r = .7, rep = 10, N = 1000, thresh1 = thr , thresh2 = thr)
-
-
-# Example 2
-nTh <- 6
-th <- (.5)/(nTh)
-probs <- c(seq(.5, 1-th, th))
-thr <- qnorm(probs)
-
-wrongCor(r = .7, rep = 10, N = 1000, thresh1 = thr , thresh2 = thr)
-
-
-# Example 3
-nTh <- 2
-prev <- c((1:nTh)/(nTh+1))
-thr <- qnorm(prev)
-
-wrongCor(r = .7, rep = 10, N = 1000, thresh1 = thr , thresh2 = thr)
-
-
-# Example 4
-nTh <- 2
-th <- (.5)/(nTh)
-probs <- c(seq(.5, 1-th, th))
-thr <- qnorm(probs)
-
-wrongCor(r = .7, rep = 10, N = 1000, thresh1 = thr , thresh2 = thr)
-
 
 
