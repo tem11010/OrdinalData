@@ -10,7 +10,8 @@ All of the simulation scripts that were used in the paper are provided, includin
 
 The script for the liability threshold model Figure (Figure 1) can be found [here](https://github.com/bradverhulst/OrdinalData/blob/master/LTMfig.R).
 The script for the first simulation study and Figure 2 can be found [here](https://github.com/bradverhulst/OrdinalData/blob/master/numOrdCat.R).
-The script for the second and thirds simulation stuies and Figure 3 can be found [here](https://github.com/bradverhulst/OrdinalData/blob/master/polySerialSim.R).
+The script for the second and thirds simulation stuies and Figure 3 can be found [here](https://github.com/bradverhulst/OrdinalData/blob/master/polySerialSim.R). 
+You can download the scripts by right-clicking on one of the links and selecting *Download Linked File*.
 
 --- 
 # Description of a Function to Calculate the Bias in the Product-Moment correlation with ordinal data
@@ -18,7 +19,7 @@ The script for the second and thirds simulation stuies and Figure 3 can be found
 As we cannot possibly anticipate every combination of simulated correlations, number of categories, threshold values, the included R function simulates data, then calculates Pearson product-moment, logit and maximum likelihood correlations and odds ratios.
 
 Below is a short tutorial demonstrating how to use the function.
-The first thing that we need to do is load the require packages and functions.  You can download the function [here](https://github.com/bradverhulst/OrdinalData/blob/master/polySerialSim.R), and save it in your working directory. (While sourcing the file direclty from github should be possible, it requires several additional steps so this is easier).
+The first thing that we need to do is load the require packages and functions.  You can download the function [here](https://github.com/bradverhulst/OrdinalData/blob/master/polySerialSim.R) by right-clicking on the link and selecting *Download Linked File*, and save it in your working directory. (While sourcing the file direclty from github should be possible, it requires several additional steps so this is easier).
 
 ```ruby
 # Load the required packages
