@@ -86,7 +86,7 @@ logit[i,j] <- mean(logitRep)  # Take the mean of the estimates across all of the
 or[i,j]    <- mean(orRep)     # Take the mean of the estimates across all of the runs
 
 }
-
+} # close correlation loop
 
 ##############################################################################################################
 ##############################################################################################################
